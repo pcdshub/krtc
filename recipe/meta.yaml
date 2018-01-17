@@ -1,0 +1,25 @@
+package:
+  name: krtc
+  version: "0.0.1"
+
+source:
+  git_url: https://github.com/slaclab/krtc.git
+  git_tag: "0.0.1"
+
+build:
+  script:
+    - pip install --no-deps --disable-pip-version-check .
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - kerberos
+  run:
+    - python
+    - setuptools
+    - kerberos
+
+about:
+  home: https://github.com/slaclab/krtc.git
+  license: MIT License
