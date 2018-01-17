@@ -5,7 +5,7 @@ This is a very small utility class for using Kerberos authentication with Python
 To use this when making calls to a web service,
 ```
 from krtc import KerberosTicket
-from urlparse import urlparse
+from urllib.parse import urlparse
 
 
 ws_url = "https://ws.slac.stanford.edu/ws/getData.json"

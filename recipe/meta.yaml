@@ -1,10 +1,10 @@
 package:
   name: krtc
-  version: "0.0.2"
+  version: "0.0.3"
 
 source:
   git_url: https://github.com/slaclab/krtc.git
-  git_tag: "0.0.2"
+  git_tag: "0.0.3"
 
 build:
   script:
