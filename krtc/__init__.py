@@ -1,1 +1,1 @@
-from krtc import KerberosTicket
+from .krtc import KerberosTicket
