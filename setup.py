@@ -1,7 +1,9 @@
+import versioneer
 from setuptools import setup
 
 setup(name='krtc',
-      version='0.1',
+      version=versioneer.get_version(),
+      cmdclass=versioneer.get_cmdclass(),
       description='A small utility class for using Kerberos authentication with Python requests',
       url='https://github.com/slaclab/krtc.git',
       author='Murali Shankar',
