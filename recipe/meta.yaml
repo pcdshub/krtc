@@ -8,17 +8,16 @@ source:
   path : ..
 
 build:
-  number: 1
+  number: 2
   noarch: python
 
 requirements:
   build:
     - python
-    - setuptools
-    - pykerberos
+    - pip
   run:
     - python
-    - setuptools
+    - pip
     - pykerberos
 
 about:
