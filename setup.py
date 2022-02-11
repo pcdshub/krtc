@@ -1,6 +1,9 @@
 import versioneer
 from setuptools import setup
 
+with open('requirements.txt') as f:
+    requirements = f.read().split()
+
 setup(name='krtc',
       version=versioneer.get_version(),
       cmdclass=versioneer.get_cmdclass(),
@@ -10,4 +13,5 @@ setup(name='krtc',
       author_email='mshankar@slac.stanford.edu',
       license='MIT',
       packages=['krtc'],
+      install_requires=requirements,
       zip_safe=False)
