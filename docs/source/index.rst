@@ -10,6 +10,7 @@ Welcome to krtc's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   usage
 
 
 Indices and tables
