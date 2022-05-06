@@ -1,5 +1,6 @@
 import kerberos
 
+
 class KerberosTicket:
     """
     Create requests headers with Kerberos credentials.
@@ -8,7 +9,9 @@ class KerberosTicket:
         __, krb_context = kerberos.authGSSClientInit(service)
         kerberos.authGSSClientStep(krb_context, "")
         self._krb_context = krb_context
-        self.auth_header = ("Negotiate " + kerberos.authGSSClientResponse(krb_context))
+        self.auth_header = (
+            "Negotiate " + kerberos.authGSSClientResponse(krb_context)
+        )
 
     def verify_response(self, auth_header):
         # Handle comma-separated lists of authentication fields

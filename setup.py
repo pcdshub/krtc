@@ -1,5 +1,6 @@
-import versioneer
 from setuptools import setup
+
+import versioneer
 
 with open('requirements.txt') as f:
     requirements = f.read().split()

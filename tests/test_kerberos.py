@@ -1,4 +1,4 @@
 
 
 def test_dependencies():
-    import krtc
+    import krtc  # noqa: F401
