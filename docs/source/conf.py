@@ -28,6 +28,7 @@ author = "SLAC National Accelerator Laboratory"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "docs_versions_menu",
     "sphinxcontrib.jquery",
 ]
 
