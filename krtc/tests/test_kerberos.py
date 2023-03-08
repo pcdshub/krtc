@@ -1,12 +1,9 @@
+import kerberos
 import pytest
 
 from ..krtc import KerberosTicket
 
 
-class FakeException(Exception):
-    ...
-
-
 def test_instantiate():
-    with pytest.raises(FakeException):  # what will it actually raise?
+    with pytest.raises(kerberos.GSSError):
         KerberosTicket("HTTP@example.com")
