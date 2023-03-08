@@ -14,8 +14,6 @@ build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
-
-
 requirements:
   build:
   - python
@@ -25,7 +23,11 @@ requirements:
   - python
   - pykerberos
 
-
+test:
+  imports:
+  - krtc
+  requires:
+  - pytest
 
 about:
   home: https://github.com/slaclab/krtc.git
