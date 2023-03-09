@@ -1,6 +1,4 @@
-from . import _version
 from .krtc import KerberosTicket
-
-__version__ = _version.get_versions()['version']
+from .version import __version__  # noqa: F401
 
 __all__ = ["KerberosTicket"]
