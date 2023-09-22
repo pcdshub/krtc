@@ -1,1 +1,2 @@
 pykerberos
+requests
